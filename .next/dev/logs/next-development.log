@@ -1,0 +1,5 @@
+{"timestamp":"00:00:02.641","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:07.651","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:00:07.821","source":"Browser","level":"WARN","message":"Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly."}
+{"timestamp":"00:00:07.831","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mPlease ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.\\u001b[39m\" \"\\u001b[2m(file://C:/Users/Arnav Ranjan/OneDrive/Desktop/Zoox Portfolio/.next/dev/static/chunks/0s9h_next_dist_11g1f0i._.js:2477:13)\\u001b[22m\""}
+{"timestamp":"00:00:07.831","source":"Browser","level":"WARN","message":"\u001b[33mPlease ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.\u001b[39m"}

@@ -11,6 +11,8 @@ export interface ProjectCard {
   gradient: string;
   technologies: string[];
   githubUrl?: string;
+  image?: string;
+  video?: string;
 }
 
 export interface StatItem {

@@ -42,6 +42,23 @@ export default function ProjectCard({ project, index }: Props) {
       <div
         className={`relative flex h-[240px] items-end justify-between overflow-hidden bg-gradient-to-br p-6 ${project.gradient}`}
       >
+        {project.video ? (
+          <video
+            src={project.video}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        ) : project.image ? (
+          <img
+            src={project.image}
+            alt={project.title}
+            className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        ) : null}
+        
         {/* Hover tag slides in from left */}
         <motion.span
           initial={{ x: -20, opacity: 0 }}
@@ -49,17 +66,17 @@ export default function ProjectCard({ project, index }: Props) {
             hovered ? { x: 0, opacity: 1 } : { x: -20, opacity: 0 }
           }
           transition={{ duration: 0.25, ease: "easeOut" }}
-          className="rounded-full bg-white/90 px-4 py-1.5 text-[12px] font-semibold text-[#1c1c1c] shadow-sm backdrop-blur-sm"
+          className="relative z-10 rounded-full bg-white/90 px-4 py-1.5 text-[12px] font-semibold text-[#1c1c1c] shadow-sm backdrop-blur-sm"
         >
           {project.tag}
         </motion.span>
 
-        <span className="text-[4rem] leading-none font-bold text-white/15">
+        <span className="relative z-10 text-[4rem] leading-none font-bold text-white/15">
           {String(project.id).padStart(2, "0")}
         </span>
 
         {/* Bottom gradient overlay */}
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+        <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
       </div>
 
       {/* Info */}

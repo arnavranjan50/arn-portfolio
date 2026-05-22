@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import NeuralNetworkVisual from "@/components/NeuralNetwork";
+import MacBookTerminal from "@/components/MacBookTerminal";
 
 export default function Hero() {
   return (
@@ -56,7 +56,7 @@ export default function Hero() {
           </a>
         </motion.div>
       </div>
-      {/* Bottom — Interactive Neural Network */}
+      {/* Bottom — Animated MacBook Terminal */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ export default function Hero() {
         className="relative mt-16 w-full"
       >
         <div className="mx-auto max-w-[1400px] overflow-hidden">
-          <NeuralNetworkVisual />
+          <MacBookTerminal />
         </div>
       </motion.div>
 

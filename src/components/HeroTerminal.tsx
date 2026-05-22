@@ -104,9 +104,9 @@ export default function HeroTerminal() {
   }, [typingComplete]);
 
   return (
-    <div className="relative w-full overflow-hidden rounded-t-[20px] bg-[#0a0e1a] sm:rounded-t-[32px]">
+    <div className="relative w-full">
       {/* Terminal window */}
-      <div className="mx-auto max-w-[750px] px-4 py-10 sm:px-8 sm:py-14">
+      <div className="mx-auto max-w-[750px]">
         <motion.div
           initial={{ y: 30, opacity: 0, scale: 0.97 }}
           animate={{ y: 0, opacity: 1, scale: 1 }}
@@ -219,9 +219,6 @@ export default function HeroTerminal() {
           </div>
         </motion.div>
 
-        {/* Reflection / glow underneath */}
-        <div className="mx-auto mt-3 h-[2px] w-3/4 bg-gradient-to-r from-transparent via-emerald-500/15 to-transparent" />
-        <div className="mx-auto mt-1 h-[1px] w-1/2 bg-gradient-to-r from-transparent via-emerald-500/8 to-transparent" />
       </div>
     </div>
   );

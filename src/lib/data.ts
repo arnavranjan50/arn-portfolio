@@ -35,6 +35,7 @@ export const projects: ProjectCard[] = [
     tag: "Music · Streaming",
     gradient: "from-emerald-400 to-cyan-500",
     technologies: ["React", "Node.js", "MongoDB", "Spotify API"],
+    githubUrl: "https://github.com/arnavranjan50/VIBE-Player",
   },
   {
     id: 2,
@@ -44,6 +45,7 @@ export const projects: ProjectCard[] = [
     tag: "3D · Portfolio",
     gradient: "from-indigo-500 to-pink-500",
     technologies: ["React", "Three.js", "GSAP", "Vercel"],
+    githubUrl: "https://github.com/arnavranjan50/portfolio",
   },
   {
     id: 3,
@@ -71,6 +73,7 @@ export const projects: ProjectCard[] = [
     tag: "Deep Learning",
     gradient: "from-teal-400 to-blue-500",
     technologies: ["Python", "TensorFlow", "Keras", "OpenCV"],
+    githubUrl: "https://github.com/arnavranjan50/ADAS---1.5",
   },
 ];
 

@@ -81,24 +81,35 @@ export default function ProjectCard({ project, index }: Props) {
           {project.description}
         </p>
 
-        <span className="group/link inline-flex items-center gap-2 text-[14px] font-semibold text-emerald-400">
-          View Project
-          <svg
-            width="14"
-            height="14"
-            viewBox="0 0 14 14"
-            fill="none"
-            className="transition-transform duration-300 group-hover/link:translate-x-1"
+        {project.githubUrl ? (
+          <a
+            href={project.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group/link inline-flex items-center gap-2 text-[14px] font-semibold text-emerald-400"
           >
-            <path
-              d="M1 7h12M8 2l5 5-5 5"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </span>
+            View on GitHub
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              className="transition-transform duration-300 group-hover/link:translate-x-1"
+            >
+              <path
+                d="M1 7h12M8 2l5 5-5 5"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </a>
+        ) : (
+          <span className="group/link inline-flex items-center gap-2 text-[14px] font-semibold text-emerald-400 opacity-50">
+            Coming Soon
+          </span>
+        )}
       </div>
     </motion.div>
   );

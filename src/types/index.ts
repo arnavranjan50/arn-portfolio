@@ -10,6 +10,7 @@ export interface ProjectCard {
   tag: string;
   gradient: string;
   technologies: string[];
+  githubUrl?: string;
 }
 
 export interface StatItem {

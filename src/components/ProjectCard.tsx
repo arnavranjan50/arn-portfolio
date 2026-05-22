@@ -12,10 +12,13 @@ interface Props {
 
 export default function ProjectCard({ project, index }: Props) {
   const [hovered, setHovered] = useState(false);
-  const { ref, isVisible } = useScrollReveal({ threshold: 0.15 });
+  const { ref, isVisible } = useScrollReveal<HTMLAnchorElement>({ threshold: 0.15 });
 
   return (
-    <motion.div
+    <motion.a
+      href={project.githubUrl || undefined}
+      target={project.githubUrl ? "_blank" : undefined}
+      rel={project.githubUrl ? "noopener noreferrer" : undefined}
       ref={ref}
       initial={{ y: 60, opacity: 0 }}
       animate={isVisible ? { y: 0, opacity: 1 } : { y: 60, opacity: 0 }}
@@ -82,10 +85,7 @@ export default function ProjectCard({ project, index }: Props) {
         </p>
 
         {project.githubUrl ? (
-          <a
-            href={project.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+          <span
             className="group/link inline-flex items-center gap-2 text-[14px] font-semibold text-emerald-400"
           >
             View on GitHub
@@ -104,13 +104,13 @@ export default function ProjectCard({ project, index }: Props) {
                 strokeLinejoin="round"
               />
             </svg>
-          </a>
+          </span>
         ) : (
           <span className="group/link inline-flex items-center gap-2 text-[14px] font-semibold text-emerald-400 opacity-50">
             Coming Soon
           </span>
         )}
       </div>
-    </motion.div>
+    </motion.a>
   );
 }

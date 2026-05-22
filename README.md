@@ -142,28 +142,6 @@ A platform designed to help college students:
 
 ---
 
-# 📈 GitHub Stats
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=arnavranjan50&show_icons=true&theme=tokyonight" />
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=arnavranjan50&layout=compact&theme=tokyonight" />
-
-</div>
-
----
-
-# 🔥 GitHub Streak
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=arnavranjan50&theme=tokyonight" />
-
-</div>
-
----
-
 # 🏆 Achievements
 
 - 🥇 Gold Medalist in NSO

@@ -18,13 +18,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ── Hide default cursor on desktop (custom cursor replaces it) ── */
-@media (hover: hover) and (pointer: fine) {
-  *, *::before, *::after {
-    cursor: none !important;
-  }
-}
-
 /* ── Custom scrollbar ── */
 ::-webkit-scrollbar {
   width: 6px;

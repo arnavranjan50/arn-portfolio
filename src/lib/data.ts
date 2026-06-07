@@ -66,6 +66,8 @@ export const projects: ProjectCard[] = [
     tag: "Social Media · Community",
     gradient: "from-teal-400 to-blue-500",
     technologies: ["Next.js", "Supabase", "Stripe", "Tailwind"],
+    githubUrl: "https://github.com/arnavranjan50/Campus-Hustlers",
+    image: "/Campus Hustlers.png",
   },
   {
     id: 5,

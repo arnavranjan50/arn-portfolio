@@ -57,10 +57,10 @@ export default function Footer() {
             </h4>
             <div className="grid grid-cols-2 gap-x-8 gap-y-2.5">
               {[
-                { label: "GitHub", href: "https://github.com/" },
-                { label: "LinkedIn", href: "https://linkedin.com/" },
-                { label: "Twitter / X", href: "https://x.com/" },
-                { label: "Instagram", href: "https://instagram.com/" },
+                { label: "GitHub", href: "https://github.com/arnavranjan50" },
+                { label: "LinkedIn", href: "https://linkedin.com/arnav-ranjan-972348207" },
+                { label: "Twitter / X", href: "https://x.com/arnavranjan50" },
+                { label: "Instagram", href: "https://instagram.com/arnav_ranjan18" },
                 { label: "Resume", href: "/Resume.pdf" },
               ].map((link) => (
                 <a
@@ -94,7 +94,7 @@ export default function Footer() {
               Have a project in mind? Let&apos;s talk about how we can work together.
             </p>
             <a
-              href="mailto:arnav@example.com"
+              href="mailto:arnavranjan50@gmail.com"
               className="inline-flex items-center gap-2 rounded-full border-2 border-[#1c1c1c] px-6 py-2.5 text-[13px] font-semibold text-[#1c1c1c] uppercase tracking-wide transition-all hover:bg-[#1c1c1c] hover:text-white"
             >
               Say Hello
